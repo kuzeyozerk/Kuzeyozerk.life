@@ -1,147 +1,206 @@
-<!-- Font yüklemesi -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>(AsLan) Kuzey ÖZERK Kimdir?</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Kuzey ÖZERK'in eğitim, askerlik ve kariyer yolculuğu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#f5f7fa;
+      --card:#ffffff;
+      --radius:14px;
+      --shadow:0 25px 50px rgba(0,0,0,0.08);
+      --accent:#1f6feb;
+      --text:#212a3e;
+      --muted:#6b7a93;
+      font-family: 'Inter', system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body {
+      margin:0;
+      background: linear-gradient(135deg,#e6ecf8 0%,#ffffff 70%);
+      color: var(--text);
+      line-height:1.55;
+      padding:40px 16px;
+    }
+    .container {
+      max-width:820px;
+      margin:0 auto;
+      padding:0 12px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding:32px 30px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    h1 {
+      margin:0;
+      font-size:2.4rem;
+      font-weight:800;
+      letter-spacing:0.5px;
+      line-height:1.1;
+      background: linear-gradient(90deg,#1f6feb,#8d3bff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-top:6px;
+      font-size:1rem;
+      font-weight:500;
+    }
+    .profile-img {
+      margin-top:16px;
+      text-align:center;
+    }
+    .profile-img img {
+      max-width:140px;
+      border-radius:50%;
+      object-fit:cover;
+      display:inline-block;
+      border:4px solid var(--accent);
+    }
+    .social {
+      margin-top:14px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+    .social a {
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      background: rgba(31,111,235,0.1);
+      padding:8px 14px;
+      border-radius:999px;
+      font-weight:600;
+      color: var(--accent);
+      transition:background .2s, transform .1s;
+    }
+    .social a:hover {
+      background: rgba(31,111,235,0.15);
+      transform:translateY(-1px);
+    }
+    .badge {
+      display:inline-block;
+      background: var(--accent);
+      color:#fff;
+      padding:6px 14px;
+      border-radius:999px;
+      font-size:0.65rem;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-right:6px;
+      font-weight:700;
+    }
+    .section {
+      margin-top:32px;
+    }
+    .section h2 {
+      margin-bottom:8px;
+      font-size:1.5rem;
+      font-weight:600;
+      position: relative;
+    }
+    .timeline {
+      list-style:none;
+      padding:0;
+      margin:0;
+      border-left:3px solid var(--accent);
+      position: relative;
+    }
+    .timeline li {
+      position: relative;
+      padding:16px 22px 16px 34px;
+      margin-bottom:18px;
+      font-weight:500;
+      background: #f9fbfd;
+      border-radius:8px;
+    }
+    .timeline li:before {
+      content:'';
+      position:absolute;
+      left:-9px;
+      top:20px;
+      width:16px;
+      height:16px;
+      border-radius:50%;
+      background: var(--accent);
+      border:3px solid #fff;
+      box-shadow:0 0 0 2px rgba(31,111,235,0.3);
+    }
+    p { margin:0 0 16px; }
+    .footer {
+      margin-top:40px;
+      font-size:0.85rem;
+      color: var(--muted);
+      text-align:center;
+    }
+    @media (max-width:800px){
+      h1 { font-size:2rem; }
+      .card { padding:24px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div>
+        <h1>(AsLan) Kuzey ÖZERK kimdir?</h1>
+        <div class="subtitle">Diyarbakır Çınar kökenli, eğitimle, askerlikle ve kariyerle yolunu kendisi belirleyen isim.</div>
+        <div class="profile-img">
+          <img src="foto.jpg" alt="Kuzey Özerk">
+        </div>
+        <div class="social">
+          <a href="https://instagram.com/kuzeyozerk" target="_blank" rel="noopener noreferrer">
+            <span style="font-size:1.1rem;">📸</span> @kuzeyozerk
+          </a>
+        </div>
+      </div>
 
-<style>
-  :root {
-    --bg:#f5f7fa;
-    --card:#ffffff;
-    --radius:14px;
-    --shadow:0 25px 50px rgba(0,0,0,0.08);
-    --accent:#1f6feb;
-    --text:#212a3e;
-    --muted:#6b7a93;
-    font-family: 'Inter', system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
-  }
-  *{box-sizing:border-box;}
-  body {
-    margin:0;
-    background: linear-gradient(135deg,#e6ecf8 0%,#ffffff 70%);
-    color: var(--text);
-    line-height:1.55;
-    padding:40px 16px;
-  }
-  .container {
-    max-width:820px;
-    margin:0 auto;
-    padding:0 12px;
-  }
-  .card {
-    background: var(--card);
-    border-radius: var(--radius);
-    padding:32px 30px;
-    box-shadow: var(--shadow);
-    position: relative;
-    overflow: hidden;
-  }
-  h1 {
-    margin:0;
-    font-size:2.4rem;
-    font-weight:800;
-    letter-spacing:0.5px;
-    line-height:1.1;
-    background: linear-gradient(90deg,#1f6feb,#8d3bff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle {
-    color: var(--muted);
-    margin-top:6px;
-    font-size:1rem;
-    font-weight:500;
-  }
-  .profile-img {
-    margin-top:16px;
-    text-align:center;
-  }
-  .profile-img img {
-    max-width:140px;
-    border-radius:50%;
-    object-fit:cover;
-    display:inline-block;
-    border:4px solid var(--accent);
-  }
-  .social {
-    margin-top:14px;
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    font-size:0.95rem;
-  }
-  .social a {
-    text-decoration:none;
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    background: rgba(31,111,235,0.1);
-    padding:8px 14px;
-    border-radius:999px;
-    font-weight:600;
-    color: var(--accent);
-    transition:background .2s, transform .1s;
-  }
-  .social a:hover {
-    background: rgba(31,111,235,0.15);
-    transform:translateY(-1px);
-  }
-  .badge {
-    display:inline-block;
-    background: var(--accent);
-    color:#fff;
-    padding:6px 14px;
-    border-radius:999px;
-    font-size:0.65rem;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-right:6px;
-    font-weight:700;
-  }
-  .section {
-    margin-top:32px;
-  }
-  .section h2 {
-    margin-bottom:8px;
-    font-size:1.5rem;
-    font-weight:600;
-    position: relative;
-  }
-  .timeline {
-    list-style:none;
-    padding:0;
-    margin:0;
-    border-left:3px solid var(--accent);
-    position: relative;
-  }
-  .timeline li {
-    position: relative;
-    padding:16px 22px 16px 34px;
-    margin-bottom:18px;
-    font-weight:500;
-    background: #f9fbfd;
-    border-radius:8px;
-  }
-  .timeline li:before {
-    content:'';
-    position:absolute;
-    left:-9px;
-    top:20px;
-    width:16px;
-    height:16px;
-    border-radius:50%;
-    background: var(--accent);
-    border:3px solid #fff;
-    box-shadow:0 0 0 2px rgba(31,111,235,0.3);
-  }
-  p { margin:0 0 16px; }
-  .footer {
-    margin-top:40px;
-    font-size:0.85rem;
-    color: var(--muted);
-    text-align:center;
-  }
-  @media (max-width:800px){
-    h1 { font-size:2rem; }
-    .card { padding:24px 18px; }
-  }
-</style>
+      <div class="section">
+        <h2><span class="badge">Eğitim</span></h2>
+        <ul class="timeline">
+          <li>
+            Cumhuriyet İlköğretim Okulu’ndan sonra Zonguldak Fen Lisesi’nde eğitim gördü. Sonra Muğla Sıtkı Koçman Üniversitesi'nde Beden Eğitimi okudu; planlar değişince mesleğini aktif yapamadı ama o süreci kendi lehine çevirdi.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2><span class="badge">Askerlik</span></h2>
+        <ul class="timeline">
+          <li>
+            Malatya’da Kobra aracında rütbeli nişancı olarak görev yaptı. Zorlu koşullarda disiplin, kontrol ve soğukkanlılık geliştirdi; elde ettiği tecrübe hem stratejik hem psikolojik güç kattı.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2><span class="badge">Kariyer &amp; Günümüz</span></h2>
+        <ul class="timeline">
+          <li>
+            Ailenin ikinci çocuğu olarak İstanbul’da ikamet ediyor ve Ağaoğlu şirketinde çalışıyor. Geçmişi arkaya atmadan kendi yolunu inşa ediyor.
+          </li>
+          <li>
+            Her adım, yeniden kurulan kararlılığın ve kendi alanını belirleme çabasının izini taşıyor.
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        Bu sayfa, Kuzey Özerk’in hayat hikayesinin yapılandırılmış hâlidir. Gelişim hâlâ devam ediyor.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
